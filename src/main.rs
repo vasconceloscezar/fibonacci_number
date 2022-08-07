@@ -2,8 +2,8 @@ use std::io;
 
 fn main() {
     println!("Let's discover fibonacci sequence!");
-    println!("Which position do you want to know the value?");
     loop {
+        println!("Which position do you want to know the value?");
         let mut position = String::new();
         io::stdin()
             .read_line(&mut position)
@@ -25,7 +25,7 @@ fn main() {
     }
 }
 
-fn fibonacci(n: u32) -> u32 {
+fn fibonacci(n: u32) -> u128 {
     if n == 0 {
         return 0;
     } else if n == 1 {
