@@ -3,7 +3,7 @@ use std::io;
 fn main() {
     println!("Let's discover fibonacci sequence!");
     loop {
-        println!("Which position do you want to know the value?");
+        println!("Which value of fibonacci you wanna know?");
         let mut position = String::new();
         io::stdin()
             .read_line(&mut position)
